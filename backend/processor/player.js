@@ -60,10 +60,10 @@ function processPlayer (buf, actor, repObj, waitingHandle, dataOut, iteration) {
     case 12:
       [attachComponnent, attachName] = buf.readObject()
       break
-    case 13:
+    case 4:
       buf.readInt(CONSTS.ROLE_MAX) // role
       break
-    case 14:
+    case 6:
       buf.readBit()
       break
     case 15:
