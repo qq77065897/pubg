@@ -51,11 +51,11 @@ function processDroppedItem (buf, actor, repObj, waitingHandle, dataOut) {
       dataOut.relativeLoc = buf.readFloatVector()
       break
     // 13 is for DroppedItemInteractionComponent
-    case 13:
+    case 4:
       buf.readRotationShort() // but we don't care
       break
     // 14 is for DroppedItemInteractionComponent
-    case 14:
+    case 6:
       buf.readFloatVector() // relativeScale3D, but we don't care
       break
     // 15 is for DroppedItemInteractionComponent
