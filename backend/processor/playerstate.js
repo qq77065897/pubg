@@ -21,7 +21,7 @@ function processPlayer (buf, actor, repObj, waitingHandle, dataOut, i) {
     case 7:
       buf.readObject() // ???
       break
-    case 13:
+    case 4:
       buf.readInt(CONSTS.ROLE_MAX)
       break
     case 16:
